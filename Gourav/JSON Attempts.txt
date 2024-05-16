@@ -1,0 +1,70 @@
+{
+    "table_name": "RelationshipInfo",
+    "table_summary": "Summary of relationships between nodes with Relationship_StartNode_NodeID and Relationship_EndNode_NodeID, Relationship_RelationshipType, periods, qualifiers, quantifiers, and registration details. Table containing relationship details between nodes, including start and end node IDs, relationship type, status, periods, qualifiers, quantifiers, registration information, and validation sources. Following is the Foreign key relationship: - FOREIGN KEY Relationship_StartNode_NodeID REFERENCES EntityInformation(LEI), - FOREIGN KEY Relationship_EndNode_NodeID REFERENCES EntityInformation(LEI). Relationship_RelationshipType defines the relationship between Relationship_StartNode_NodeID and Relationship_EndNode_NodeID. Following are the available relation types: - 'IS_ULTIMATELY_CONSOLIDATED_BY' defines ultimate child, - IS_DIRECTLY_CONSOLIDATED_BY defines direct child, - IS_FUND-MANAGED_BY defines fund managed by."
+}
+
+
+
+{
+    "table_name": "RelationshipInfo",
+    "table_summary": "Summary of relationships between nodes with Relationship_StartNode_NodeID and Relationship_EndNode_NodeID, Relationship_RelationshipType, periods, qualifiers, quantifiers, and registration details.\n\nTable containing relationship details between nodes, including start and end node IDs, relationship type, status, periods, qualifiers, quantifiers, registration information, and validation sources.\n\nFollowing is the Foreign key relationship:\n- FOREIGN KEY Relationship_StartNode_NodeID REFERENCES EntityInformation(LEI),\n- FOREIGN KEY Relationship_EndNode_NodeID REFERENCES EntityInformation(LEI).\n\nRelationship_RelationshipType defines the relationship between Relationship_StartNode_NodeID and Relationship_EndNode_NodeID.\n\nFollowing are the available relation types:\n- 'IS_ULTIMATELY_CONSOLIDATED_BY' defines ultimate child,\n- 'IS_DIRECTLY_CONSOLIDATED_BY' defines direct child,\n- 'IS_FUND-MANAGED_BY' defines fund managed by."
+}
+
+
+
+
+{
+    "table_name": "RelationshipInfo",
+    "table_summary": "Summary of relationships between nodes with Relationship_StartNode_NodeID and Relationship_EndNode_NodeID, Relationship_RelationshipType, periods, qualifiers, quantifiers, and registration details.\n\nTable containing relationship details between nodes, including start and end node IDs, relationship type, status, periods, qualifiers, quantifiers, registration information, and validation sources.\n\nFollowing is the Foreign key relationship:\n- FOREIGN KEY Relationship_StartNode_NodeID REFERENCES EntityInformation(LEI),\n- FOREIGN KEY Relationship_EndNode_NodeID REFERENCES EntityInformation(LEI).\n\nRelationship_RelationshipType defines the relationship between Relationship_StartNode_NodeID and Relationship_EndNode_NodeID.\n\nFollowing are the available relation types:\n- 'IS_ULTIMATELY_CONSOLIDATED_BY' defines ultimate child,\n- 'IS_DIRECTLY_CONSOLIDATED_BY' defines direct child,\n- 'IS_FUND-MANAGED_BY' defines fund managed by."
+}
+
+
+{
+    "table_name": "RelationshipInfo",
+    "table_summary": "Table summarizing relationships between nodes. Contains the following columns: Relationship_StartNode_NodeID, Relationship_EndNode_NodeID, Relationship_RelationshipType, periods, qualifiers, quantifiers, registration information, and validation sources.\n\nRelationships are defined by the Relationship_RelationshipType column, which can be one of the following:\n- 'IS_ULTIMATELY_CONSOLIDATED_BY': Defines the ultimate parent-child relationship.\n- 'IS_DIRECTLY_CONSOLIDATED_BY': Defines a direct parent-child relationship.\n- 'IS_FUND-MANAGED_BY': Defines a fund managed by relationship.\n- 'IS_FUND-MANAGER': Defines a fund manager relationship.\n\nForeign key relationships:\n- Relationship_StartNode_NodeID REFERENCES EntityInformation(LEI)\n- Relationship_EndNode_NodeID REFERENCES EntityInformation(LEI)"
+}
+
+
+{
+    "table_name": "RelationshipInfo",
+    "table_summary": "This table contains detailed information about the relationships between companies, including the following columns:\n\n- Relationship_StartNode_NodeID: The ID of the starting node (company) in the relationship.\n- Relationship_EndNode_NodeID: The ID of the ending node (company) in the relationship.\n- Relationship_RelationshipType: The type of relationship between the start node and the end node. Possible values are:\n  - 'IS_ULTIMATELY_CONSOLIDATED_BY': Indicates that the start node is ultimately consolidated by the end node.\n  - 'IS_DIRECTLY_CONSOLIDATED_BY': Indicates that the start node is directly consolidated by the end node.\n  - 'IS_FUND-MANAGED_BY': Indicates that the start node is a fund managed by the end node.\n  - 'IS_FUND-MANAGER': Indicates that the start node is the manager of the fund (end node).\n- periods: The periods during which the relationship is valid.\n- qualifiers: Additional qualifiers for the relationship.\n- quantifiers: Quantitative measures related to the relationship.\n- registration information: Registration details of the relationship.\n- validation sources: Sources validating the relationship.\n\nForeign Key Relationships:\n- Relationship_StartNode_NodeID REFERENCES EntityInformation(LEI)\n- Relationship_EndNode_NodeID REFERENCES EntityInformation(LEI)\n\nEnsure that the CSVs contain the relevant data for these columns and that the Relationship_RelationshipType accurately reflects the specified relationship types."
+}
+
+
+{
+    "table_name": "RelationshipInfo",
+    "table_summary": "This table details the relationships between companies, identified by their LEI (Legal Entity Identifier). It includes the following columns:\n\n- Relationship_StartNode_NodeID: The LEI of the starting company in the relationship.\n- Relationship_EndNode_NodeID: The LEI of the ending company in the relationship.\n- Relationship_RelationshipType: The type of relationship. Possible values are:\n  - 'IS_ULTIMATELY_CONSOLIDATED_BY': The start node is ultimately consolidated by the end node (ultimate parent-child relationship).\n  - 'IS_DIRECTLY_CONSOLIDATED_BY': The start node is directly consolidated by the end node (direct parent-child relationship).\n  - 'IS_FUND-MANAGED_BY': The start node is managed by the end node (fund managed by relationship).\n  - 'IS_FUND-MANAGER': The start node is the manager of the end node (fund manager relationship).\n\nForeign Key Relationships:\n- Relationship_StartNode_NodeID REFERENCES EntityInformation(LEI)\n- Relationship_EndNode_NodeID REFERENCES EntityInformation(LEI)\n\nEnsure that queries use LEI values for node IDs, not company names."
+}
+
+
+
+
+{
+    "table_name": "RelationshipInfo",
+    "table_summary": "Table containing relationship details between nodes, including start and end node IDs, relationship type, status, periods, qualifiers, quantifiers, registration information, and validation sources. Following is the Foreign key ralationship FOREIGN KEY Relationship_StartNode_NodeID REFERENCES EntityInformation(LEI), FOREIGN KEY Relationship_EndNode_NodeID REFERENCES EntityInformation(LEI)."
+}
+
+
+
+
+{
+    "table_name": "RelationshipInfo",
+    "table_summary": "Table containing relationship details between nodes, including start and end node IDs, relationship type, status, periods, qualifiers, quantifiers, registration information, and validation sources. Relationship_RelationshipType defines the relationship between Relationship_StartNode_NodeID and Relationship_EndNode_NodeID. Following are the avilable relations type:  'IS_ULTIMATELY_CONSOLIDATED_BY' defines ultimate child, 'IS_DIRECTLY_CONSOLIDATED_BY' defines direct child, 'IS_FUND-MANAGED_BY' defines fund managed by."
+}
+
+
+
+{
+    "table_name": "RelationshipInfo",
+    "table_summary": "This table contains detailed information about relationships between nodes. Each record includes the following fields:\n\n- Relationship_StartNode_NodeID: The identifier of the starting node in the relationship.\n- Relationship_EndNode_NodeID: The identifier of the ending node in the relationship. This field is also the PRIMARY KEY in the LegalEntityInfo table.\n- Relationship_RelationshipType: The type of relationship between the start and end nodes. Available relationship types are:\n  - 'IS_ULTIMATELY_CONSOLIDATED_BY': Indicates that the start node is ultimately consolidated by the end node (ultimate parent-child relationship).\n  - 'IS_DIRECTLY_CONSOLIDATED_BY': Indicates that the start node is directly consolidated by the end node (direct parent-child relationship).\n  - 'IS_FUND-MANAGED_BY': Indicates that the start node is managed by the end node (fund managed by relationship).\n- Status: The current status of the relationship.\n- Periods: The periods during which the relationship is active.\n- Qualifiers: Additional qualifiers providing more context about the relationship.\n- Quantifiers: Quantitative measures related to the relationship.\n- Registration Information: Details about the registration of the relationship.\n- Validation Sources: Sources used to validate the relationship information.\n\nUse the 'Relationship_RelationshipType' field to determine the type of relationship between 'Relationship_StartNode_NodeID' and 'Relationship_EndNode_NodeID'."
+}
+
+
+#Last Case V2:
+
+{"table_name": "LegalEntityInfo", "table_summary": "Table containing detailed information about a legal entity, including legal name, addresses, registration details, entity status, associated entities, successor entities, legal entity events, and conformity flag. Use the LEI header as PRIMARY KEY of the table and it should be refering to Relationship_RelationshipType header in the RelationshipInfo"}
+
+{
+    "table_name": "RelationshipInfo",
+    "table_summary": "Table containing relationship details between nodes, including start and end node IDs, relationship type, status, periods, qualifiers, quantifiers, registration information, and validation sources. Use the 'Relationship_RelationshipType' to find out the relationship between 'Relationship_StartNode_NodeID' and 'Relationship_EndNode_NodeID'. Also understand that the 'Relationship_EndNode_NodeID' is LEI in LegalEntityInfo . Following are the avilable relations type:  'Ultimate children' by using value  'IS_ULTIMATELY_CONSOLIDATED_BY', 'Direct children' by using value 'IS_DIRECTLY_CONSOLIDATED_BY', 'Managed Funds' by using value 'IS_FUND-MANAGED_BY' and the 'Fund Manager' by useing value 'IS_FUND-MANAGER'. Find out all these available relations for the given 'Relationship_EndNode_NodeID' that should be same as 'LEI'"
+}
