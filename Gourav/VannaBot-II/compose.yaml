@@ -1,0 +1,54 @@
+services:
+  db:
+    image: postgres
+    container_name: local_pgdb
+    restart: always
+    ports:
+      - "5432:5432"  # Host port:Container port
+    environment:
+      POSTGRES_DB: GLIEF
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - local_pgdata:/var/lib/postgresql/data
+    networks:
+      - my_network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4_container
+    restart: always
+    ports:
+      - "8888:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: gkashyap@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: pgadmin
+    volumes:
+      - pgadmin-data:/var/lib/
+    networks:
+      - my_network
+  
+  flask_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - FLASK_APP=app/app.py
+    command: ["./start.sh"]
+    ports:
+      - "8084:8084"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+      - pgadmin
+    networks:
+      - my_network
+
+volumes:
+  local_pgdata:
+  pgadmin-data:
+  db_data:
+
+networks:
+  my_network:
